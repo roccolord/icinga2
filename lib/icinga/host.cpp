@@ -330,6 +330,9 @@ bool Host::ResolveMacro(const String& macro, const CheckResult::Ptr&, Value *res
 		} else if (macro == "check_source") {
 			*result = cr->GetCheckSource();
 			return true;
+		} else if (macro == "scheduling_endpoint") {
+			*result = cr->GetSchedulingEndpoint();
+			return true;
 		}
 	}
 

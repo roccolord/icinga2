@@ -78,6 +78,7 @@ class CheckResult
 	};
 
 	[state] String check_source;
+	[state] String scheduling_endpoint;
 	[state] double ttl;
 
 	[state] Dictionary::Ptr vars_before;
